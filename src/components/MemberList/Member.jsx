@@ -1,8 +1,15 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 export const Member = ({member}) => {
+    const navigate = useNavigate();
+
+    const handleClickMember = (id) => {
+        navigate(`/member/${id}`);
+    }
+
     return (
-        <div className='member'>
+        <div className='member' onClick={() => handleClickMember(member.id)}>
             <div className="fields">
                 <div className="name">
                     Name: 

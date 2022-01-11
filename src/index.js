@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { Member } from "./pages";
 
 import {
   BrowserRouter,
@@ -14,6 +15,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/member/:id" element={<Member />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
