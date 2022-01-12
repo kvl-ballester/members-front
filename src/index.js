@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { Member } from "./pages";
+import { Member, NewMember } from "./pages";
 
 import {
   BrowserRouter,
@@ -16,6 +16,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/member/:id" element={<Member />} />
+        <Route path="/new" element={<NewMember />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
