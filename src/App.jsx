@@ -1,4 +1,7 @@
-import { Header, MemberList } from "./components";
+import { Header, MemberList, Button } from "./components";
+import { useNavigate } from "react-router-dom";
+
+import "./app.scss"
 
 const items = [
   {id: 1, name :"pepe", age: 23},
@@ -16,10 +19,25 @@ const items = [
 
 
 function App() {
+  const navigate = useNavigate();
+
+  const handleAddMember = () => {
+    navigate(`/new`);
+  }
+
   return (
     <div className="App">
       <Header text="Members"/>
-      <MemberList data={items}/>
+      <div className="content-container">
+        <MemberList data={items}/>
+        <div className="list-controls">
+          <div className="paginate">
+
+          </div>
+        <Button text="Add member" onClick={() => handleAddMember()} />
+        </div>
+      </div>
+      
     </div>
   );
 }
