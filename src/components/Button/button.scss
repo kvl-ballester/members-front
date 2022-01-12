@@ -1,0 +1,31 @@
+.button{
+    
+
+    button {
+        background-color: orange;
+        color: white;
+        border-radius: 16px;
+        min-width: 5em ;
+        padding: 0.25em 1.5em;
+
+        font-size: 17px;
+        font-weight: bold;
+
+       
+
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .text {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+    }
+}
