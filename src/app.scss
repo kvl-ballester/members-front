@@ -1,3 +1,21 @@
 .App {
 
+ .content-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 2em auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+
+    .list-controls {
+        
+        .button {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+ }
 }
