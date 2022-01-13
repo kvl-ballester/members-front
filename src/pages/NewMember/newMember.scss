@@ -1,3 +1,15 @@
 #new-member {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    width: 80%;
+    max-width: 1000px;
+    margin: 2em auto;
+
+
+    .buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
