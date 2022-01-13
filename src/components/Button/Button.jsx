@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import "./button.scss"
 
-export const Button = ({text, onClick}) => {
+export const Button = ({text, onClickButton}) => {
     return (
         <div className={`button ${text}Button`}>
-            <button onClick={() => onClick()}>
+            <button onClick={() => onClickButton()}>
                 <div className='text'>
                     {text}
                 </div>
@@ -16,5 +16,5 @@ export const Button = ({text, onClick}) => {
 
 Button.propTypes = {
     text: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired
+    onClickButton: PropTypes.func.isRequired
 }

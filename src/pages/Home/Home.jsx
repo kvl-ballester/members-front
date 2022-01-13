@@ -46,7 +46,7 @@ const handleDeleteMember = (id) => {
           <div className="paginate">
 
           </div>
-        <Button text="Add member" onClick={() => handleAddMember()} />
+        <Button text="Add member" onClickButton={() => handleAddMember()} />
         </div>
       </div>
       
