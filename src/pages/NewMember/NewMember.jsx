@@ -1,11 +1,11 @@
-import { Header } from "../../components";
+import { Header, BackTo } from "../../components";
 
 export const NewMember = () => {
     return (
         <>  
             <Header text="Add member" />
             <div id="new-member">
-                Aqui iria uNA FLECHA PARA VOLVER ATRAS
+                <BackTo path="/" text="Back to members" />
                 <br />
                 Yluego un formulario
             </div>
