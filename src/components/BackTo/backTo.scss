@@ -1,0 +1,27 @@
+.backTo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 1.5em;
+    color: blue;
+    width: fit-content;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .arrow {
+        padding-top: 2px;
+
+        svg {
+            path {
+                stroke-width: 0.6;
+                
+            }
+        }
+    }
+
+    
+
+    
+}
