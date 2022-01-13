@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import { Member, NewMember } from "./pages";
+import { Member, NewMember, Home } from "./pages";
 
 import {
   BrowserRouter,
@@ -14,7 +13,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
         <Route path="/member/:id" element={<Member />} />
         <Route path="/new" element={<NewMember />} />
       </Routes>

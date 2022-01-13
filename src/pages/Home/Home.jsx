@@ -1,7 +1,7 @@
-import { Header, MemberList, Button } from "./components";
+import { Header, MemberList, Button } from "../../components";
 import { useNavigate } from "react-router-dom";
 
-import "./app.scss"
+import "./home.scss"
 
 const items = [
   {id: 1, name :"pepe", age: 23},
@@ -18,7 +18,7 @@ const items = [
 ]
 
 
-function App() {
+export function Home() {
   const navigate = useNavigate();
 
   const handleAddMember = () => {
@@ -26,7 +26,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="home">
       <Header text="Members"/>
       <div className="content-container">
         <MemberList data={items}/>
@@ -42,4 +42,4 @@ function App() {
   );
 }
 
-export default App;
+
