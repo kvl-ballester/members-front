@@ -25,11 +25,23 @@ export function Home() {
     navigate(`/new`);
   }
 
+  const handleClickMember = (id) => {
+    navigate(`/member/${id}`);
+}
+
+const handleDeleteMember = (id) => {
+    console.log("click borrar member: ", id)
+}
+
   return (
     <div className="home">
       <Header text="Members"/>
       <div className="content-container">
-        <MemberList data={items}/>
+        <MemberList 
+          data={items}
+          onClickMember={(id) => handleClickMember(id)}
+          onClickDeleteMember={(id) => handleDeleteMember(id)}
+        />
         <div className="list-controls">
           <div className="paginate">
 

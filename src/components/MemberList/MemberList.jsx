@@ -5,16 +5,10 @@ import { useNavigate } from "react-router-dom";
 
 import "./memberList.scss"
 
-export const MemberList = ({data}) => {
+export const MemberList = ({data, onClickMember, onClickDeleteMember}) => {
     const navigate = useNavigate();
 
-    const handleClickMember = (id) => {
-        navigate(`/member/${id}`);
-    }
-
-    const handleDeleteMember = (id) => {
-        console.log("click borrar member: ", id)
-    }
+    
 
 
     return (
@@ -23,8 +17,8 @@ export const MemberList = ({data}) => {
                 return <Member 
                     key={member.id} 
                     member={member}
-                    onClickMember={(id) => handleClickMember(id)}
-                    onClickDeleteMember={(id) => handleDeleteMember(id)}
+                    onClickMember={onClickMember}
+                    onClickDeleteMember={onClickDeleteMember}
                 />
             })}
         </div>
