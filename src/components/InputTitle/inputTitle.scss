@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.input-title {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    .input-container {
+
+        input {
+            height: 2em;
+            outline: none;
+            border: 0;
+            border-radius: 6px;
+
+            padding-left: 0.5em;
+
+            width: 100%;
+
+            &::placeholder {
+                font-style: italic;
+            }
+        }
+    }
+}
