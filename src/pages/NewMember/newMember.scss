@@ -7,9 +7,43 @@
     max-width: 1000px;
     margin: 2em auto;
 
+    * {
+        margin: 0;
+    }
 
     .buttons {
         display: flex;
         justify-content: space-evenly;
+
+        .CancelButton {
+            button {
+                background-color: rgba($color: #ff3939, $alpha: 1.0);
+            }
+        }
+
+        .AddButton {
+            button {
+                background-color: rgba($color: #14e637, $alpha: 1.0);
+            }
+        }
+        
     }
 }
+
+@media (max-width: 450px) {
+    #new-member {
+        .inner-row {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+    
+            .input-title {
+                width: 100%;
+            }
+        }
+
+    }
+
+    
+}
+
